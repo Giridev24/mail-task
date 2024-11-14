@@ -1,0 +1,28 @@
+.list-container {
+  padding: 50px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.mail-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+}
+
+.mail-table th, .mail-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.mail-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+.error {
+  color: red;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
