@@ -1,4 +1,4 @@
-
+/* Form container styling */
 .form-container {
   width: 100%;
   max-width: 500px;
@@ -10,29 +10,34 @@
   font-family: 'Georgia', 'Times New Roman', serif;
 }
 
+/* Header styling */
 h1 {
   text-align: center;
   margin-bottom: 20px;
   font-family: 'Arial', sans-serif;
 }
 
+/* Form layout */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
+/* Form group layout */
 .form-group {
   display: flex;
   flex-direction: column;
 }
 
+/* Label styling */
 label {
   margin-bottom: 5px;
   font-weight: bold;
   font-family: 'Arial', sans-serif;
 }
 
+/* Input field styling */
 input.form-input {
   padding: 10px;
   font-size: 16px;
@@ -41,6 +46,7 @@ input.form-input {
   font-family: 'Georgia', 'Times New Roman', serif;
 }
 
+/* Submit button styling */
 button.submit-btn {
   padding: 10px;
   background-color: #4caf50;
@@ -57,6 +63,7 @@ button.submit-btn:hover {
   background-color: #45a049;
 }
 
+/* List button styling (positioned within the form container) */
 .form-container {
   position: relative;
 }
@@ -80,7 +87,23 @@ button.submit-btn:hover {
   background-color: #0056b3;
 }
 
+/* Disabled submit button styling */
 .submit-btn:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+@media (max-width: 600px){
+
+  .form-container {
+    width: 80%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', 'Times New Roman', serif;
+  }
+
 }
