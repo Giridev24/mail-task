@@ -1,1 +1,1 @@
-export const baseUrl =  'http://localhost:5000'  //'https://mail-task-backend.onrender.com'  
+export const baseUrl =  'https://mail-server-olag.onrender.com'  //'http://localhost:5000'
