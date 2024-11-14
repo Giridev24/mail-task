@@ -1,12 +1,15 @@
+/* Basic container styling */
 .list-container {
   padding: 50px;
   font-family: 'Georgia', 'Times New Roman', serif;
 }
 
+/* Table styles */
 .mail-table {
   width: 100%;
   border-collapse: collapse;
   font-family: 'Arial', sans-serif;
+  margin-top: 20px;
 }
 
 .mail-table th, .mail-table td {
@@ -15,14 +18,63 @@
   text-align: left;
 }
 
+/* Table header styling */
 .mail-table th {
   background-color: #f2f2f2;
   font-weight: bold;
-  font-family: 'Arial', sans-serif;
 }
 
+/* Error message styling */
 .error {
   color: red;
   font-family: 'Arial', sans-serif;
   font-size: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Reduce padding in container for smaller screens */
+  .list-container {
+    padding: 20px;
+  }
+
+  /* Adjust table layout for smaller screens */
+  .mail-table th, .mail-table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  /* Stack the table for very small screens (mobile) */
+  .mail-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Change header font size on smaller devices */
+  .mail-table th {
+    font-size: 16px;
+  }
+
+  /* Adjust error message font size on smaller screens */
+  .error {
+    font-size: 12px;
+  }
+}
+
+/* Further adjustments for very small screens (below 480px, e.g., small phones) */
+@media (max-width: 480px) {
+  .mail-table th, .mail-table td {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .mail-table th {
+    font-size: 14px;
+  }
+
+  /* Adjust the error message font size */
+  .error {
+    font-size: 10px;
+  }
 }
