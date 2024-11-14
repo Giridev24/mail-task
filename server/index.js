@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://mail-task-client.vercel.app' //'http://localhost:5173',
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type'],
   credentials: true,
